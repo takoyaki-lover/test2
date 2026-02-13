@@ -4,14 +4,14 @@ const container = document.querySelector(".container");
 
 let isDragging = false;
 
-dragbar.addEventListener("mousedown", function (e) {
+dragbar.addEventListener("pointerdown", function (e) {
   e.preventDefault();
   isDragging = true;
   document.body.style.cursor = "ew-resize";
   document.body.style.userSelect = "none";
 });
 
-document.addEventListener("mousemove", function (e) {
+document.addEventListener("pointermove", function (e) {
   if (!isDragging) return;
 
   // 現在のマウスの位置からコンテナの左端までの距離を取得
@@ -22,7 +22,7 @@ document.addEventListener("mousemove", function (e) {
   sidebar.style.width = newWidth + "px";
 });
 
-document.addEventListener("mouseup", function (e) {
+document.addEventListener("pointerup", function (e) {
   if (isDragging) {
     isDragging = false;
     document.body.style.cursor = "default";
