@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resizable Sidebar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidebar" class="sidebar">
+        <h2>サイドバー</h2>
+        <p>最大400pxまでドラッグで幅調整可能→</p>
+      </div>
+      <div id="dragbar" class="dragbar"></div>
+      <div class="main">
+        <h1>メインコンテンツ</h1>
+        <div>
+          <p>iframe</p>
+          <iframe src="https://example.com/" width="300" height="100"></iframe>
+        </div>
+        <div>
+          <p>embed</p>
+          <embed
+            src="https://example.com/"
+            type="text/html"
+            width="300"
+            height="100"
+          />
+        </div>
+        <div>
+          <p>video</p>
+          <video controls="" width="300" height="100">
+            <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+
+            <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+
+            Download the
+            <a href="/media/cc0-videos/flower.webm">WEBM</a>
+            or
+            <a href="/media/cc0-videos/flower.mp4">MP4</a>
+            video.
+          </video>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
