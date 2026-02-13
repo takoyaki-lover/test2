@@ -25,7 +25,7 @@ html {
 }
 
 .dragbar {
-  width: 20px;
+  width: 50px;
   background-color: #ddd;
   cursor: ew-resize;
 }
