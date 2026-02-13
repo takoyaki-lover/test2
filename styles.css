@@ -17,7 +17,7 @@ html {
 
 .sidebar {
   width: 250px; /* 初期幅 */
-  max-width: 400px;
+  max-width: 600px;
   min-width: 200px;
   background-color: #f4f4f4;
   padding: 20px;
@@ -25,7 +25,7 @@ html {
 }
 
 .dragbar {
-  width: 5px;
+  width: 20px;
   background-color: #ddd;
   cursor: ew-resize;
 }
